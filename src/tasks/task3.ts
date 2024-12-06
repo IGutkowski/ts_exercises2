@@ -5,7 +5,9 @@
  * a wartością boolean określający czy kontrola została przeprowadzona.
  */
 
-export type KontroleZaRok = any;
+export type KontroleZaRok = {
+    [year: number]: boolean;
+}
 
 export const kontroleZaRok: KontroleZaRok = {
     2019: true,
@@ -14,3 +16,4 @@ export const kontroleZaRok: KontroleZaRok = {
     2022: true,
     2023: true,
 }
+

@@ -8,9 +8,13 @@
  */
 
 export const wyniki: unknown = {
-    1: ""
+    1: "",
+    2: "",
 }
 
 //# ---
+export type WynikiAleZTypem = {
+    [key: number]: string;
+}
 
-export const wynikiAleZTypem = wyniki;
+export const wynikiAleZTypem : WynikiAleZTypem = wyniki as WynikiAleZTypem;

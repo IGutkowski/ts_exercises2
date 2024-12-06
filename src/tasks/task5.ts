@@ -14,8 +14,10 @@ export type Wydatek = {
 
 //# ---
 
-//export type WydatekSzefa = any;
-export type WycieczkaSzefaNaKosztFirmy = any;
+export type WydatekSzefa = Wydatek & {
+    isSzef: true;
+}
+export type WycieczkaSzefaNaKosztFirmy = WydatekSzefa & {
+    cel: string;
+}
 
-export interface WydatekSzefa {};
-//export interface WycieczkaSzefaNaKosztFirmy {};
